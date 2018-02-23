@@ -38,5 +38,6 @@
   },
   "devDependencies": {
     "webpack-auto-inject-version": "^1.0.0"
-  }
+  },
+  "readme": "README.md"
 }
