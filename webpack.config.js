@@ -4,9 +4,6 @@ var WebpackMd5Hash = require('webpack-md5-hash');
 var WebpackAutoInject = require('webpack-auto-inject-version');
 
 module.exports = {
-	modulesDirectories: ["node_modules"],
-	//devtool: 'source-map',
-	//Pour le module facebook "fb"
 	node: {
 		fs: "empty",
 		tls: "empty",
@@ -14,8 +11,8 @@ module.exports = {
 	},
 	entry: ['babel-polyfill', './src/index.js'],
 	output: {
-		path: path.join(__dirname, '../lib/'),
-		filename: 'react-numeral.js'
+		path: path.join(__dirname, '/lib/'),
+		filename: 'react-numeral-smart.js'
 	},
 	plugins: [
 		new webpack.optimize.OccurrenceOrderPlugin(),
